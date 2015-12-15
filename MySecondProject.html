@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8"></meta>
 <style>
-ul#menu a 
-{
-	background-color:blue;
-	color:white;
-	list-heigth:3px;
-	text-decoration:none;
-	border-radius: 1px 1px 0 0;
-}
-ul#menu a:hover 
-{
-	background-color:orange;
+
+#marquee1 {
+	background-color:red;
 }
 
-
+#marquee2 {
+	background-color:green;
+}
 
 #header {
     background-color:black;
@@ -23,9 +18,16 @@ ul#menu a:hover
     text-align:center;
     padding:1px;
 }
+#header2 {
+	background-color:black;
+	color:white;
+	text-align:center;
+}
+
+
 #nav {
     line-height:30px;
-    background-color:#eeeeee;
+    background-color:lightgrey;
     height:300px;
     width:50px;
     float:left;
@@ -37,85 +39,240 @@ ul#menu a:hover
     float:left;
     padding:10px;	 	 
 }
-#footer {
+#section2 {
+    
+    width:500px;
+    float:left;
+    padding:10px;	 	 
+}
+#sidesection {
+	width:800px;
+	float:left;
+	padding:10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+   
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+	
+}
+
+
+p.capitals {
+	text-align:center;
+	padding:10px;
+	margin:5px;
+	
+}
+
+
+p.error 
+{
+    border:5px solid lightgrey;
+    padding:5px;
+    margin:5px;
+    color:blue;
+}
+
+#closer {
     background-color:black;
     color:white;
     clear:both;
     text-align:center;
-   padding:5px;	 	 
+    padding:5px;	 	 
 }
 </style>
 </head>
 <body>
 
 <div id="header">
-<h1>This is gonna be my First Site eventually!</h1>
+<h1>HTML PROJECT</h1>
 </div>
-<h2><a name="Top">Top of the Page</a></h2>
+<h2 style="background-color:yellow"><marquee behavior="slide" scrollamount="15" width="50%" direction="right">Welcome</marquee></h2>
+<div id="marquee1"><h2 style="text-align:right"><marquee behavior="slide" scrollamount="20" width="55%">To</marquee></h2></div>
+<h2 style="background-color:orange"><marquee behavior="slide" scrollamount="15" width="47%" direction="right">My</marquee></h2>
+<div id="marquee2"><h2 style="text-align:right"><marquee behavior="slide" scrollamount="20" direction="rtl" width="55%">Site!</marquee></h2></div>
 
-<h4 style="color:red">There are three hidden clues inside this page, one lie and a very important question in the end which you <i><b>MUST</b></i> answer!!!</h4>
-<blockquote>
-<h3><i>Interesting Fact</i></h3>
-<img src="http://s29.postimg.org/lpnjvx1xj/small_fact_frog.jpg" alt="Small_Fact_Frog" width="250px" height="250px"></img>
-</blockquote>
+
+<h2 id="header2"><a name="Top">Random Capitals Review</a></h2>
+
+
 
 <div id="nav">
 London<br>
 <a href="#ChapterParis">Paris</a><br>
 <a href="#ChapterTokyo">Tokyo</a><br>
+<a href="#ChapterBerlin">Berlin</a><br>
+<a href="#ChapterMadrid">Madrid</a><br>
+<a href="#ChapterRome">Rome</a><br>
 </div>
 <div id="section">
 <h3 style="underline"><u>London</u></h3>
-<p>
-London is the capital city of <a href="https://en.wikipedia.org/wiki/England">England</a>. It is the most populous city in the United Kingdom,
-with a metropolitan area of over 13 million inhabitants.
-</p>
-<p>
-Standing on the River Thames, London has been a major settlement for two millennia,
-its history going back to its founding by the Romans, who named it Londinium.
-</p>
-<p> Other informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther <br><a href="#Top">Jumptothetop</a></p>
 
+<p> London is the capital and most populous city of <a href="https://en.wikipedia.org/wiki/England">England</a> and the United Kingdom. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.[5] London's ancient core, the City of London, largely retains its 1.12-square-mile (2.9 km2) medieval boundaries and in 2011 had a resident population of 7,375, making it the smallest city in England. Since at least the 19th century, the term London has also referred to the metropolis developed around this core.[6] The bulk of this conurbation forms Greater London, a region of England governed by the Mayor of London and the London Assembly. The conurbation also covers two English counties: the small district of the City of London and the county of Greater London. The latter constitutes the vast majority of London, though historically it was split between Middlesex (a now abolished county), Essex, Surrey, Kent and Hertfordshire.
+
+London is a leading global city, with strengths in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism, and transport all contributing to its prominence. It is one of the world's leading financial centres and has the fifth-or sixth-largest metropolitan area GDP in the world depending on measurement. London is a world cultural capital. It is the world's most-visited city as measured by international arrivals and has the world's largest city airport system measured by passenger traffic. London is the world's leading investment destination, hosting more international retailers and ultra high-net-worth individuals than any other city. London's 43 universities form the largest concentration of higher education institutes in Europe, and a 2014 report placed it first in the world university rankings. According to the report London also ranks first in the world in software, multimedia development and design, and shares first position in technology readiness. In 2012, London became the first city to host the modern Summer Olympic Games three times.
+
+London has a diverse range of peoples and cultures, and more than 300 languages are spoken within Greater London. The Office for National Statistics estimated its mid-2014 population to be 8,538,689,[2] the largest of any municipality in the European Union, and accounting for 12.5 percent of the UK population. London's urban area is the second most populous in the EU, after Paris, with 9,787,426 inhabitants according to the 2011 census. The city's metropolitan area is one of the most populous in Europe with 13,879,757 inhabitants, while the Greater London Authority states the population of the city-region (covering a large part of south east England) as 22.7 million. London was the world's most populous city from around 1831 to 1925.
+
+</p>
+
+<br><a href="#Top">Jumptothetop</a>
 
 
 <h3 style="underline"><a name="ChapterParis"><u>Paris</u></a></h3>
 <p>
-Paris is the capital city of <a href="https://en.wikipedia.org/wiki/France">France</a>. It is the most populous city in the Region of Europe,
-with a metropolitan area of over 2.5 million inhabitants.
+Paris is the capital and most populous city of <a href="https://en.wikipedia.org/wiki/France">France</a>. Situated on the Seine River, in the north of the country, it is in the centre of the Île-de-France region, also known as the région parisienne, "Paris Region". The City of Paris has an area of 105 km² (41 mi²) and a population of 2,241,346 (2014 estimate)[5] within its administrative borders essentially unchanged since 1860.[4] Since the 19th century, the built-up area of Paris has grown largely beyond its administrative borders: together with its suburbs, the whole agglomeration has a population of 10,550,350 (Jan. 2012 census),[2] or 16.2% of the population of France.[6] The administrative Paris Region covers 12,012 km² (4,638 mi²), and has its own regional council and president. It had a population of 12,005,077 as of January 2014 estimates.
+
+Paris was founded in the 3rd century BC by a Celtic people called the Parisii, who gave the city its name. By the 12th century, Paris was the largest city in the western world, a prosperous trading centre, and the home of the University of Paris, one of the first in Europe. In the 18th century, it was the centre stage for the French Revolution, and became an important centre of finance, commerce, fashion, science, and the arts, a position it still retains today.
+
+The Paris Region had a GDP of €624 billion (US $687 billion) in 2012, accounting for 30.0 percent of the GDP of France, and ranking it as one of the wealthiest five regions in Europe; it is the banking and financial centre of France, and contains the headquarters of 29 of the 31 companies in France ranked in the 2015 Fortune Global 500.
+
+Paris is the home of the most visited art museum in the world, the Louvre, as well as the Musée d'Orsay, noted for its collection of French Impressionist art, and the Musée National d'Art Moderne, a museum of modern and contemporary art. The notable architectural landmarks of Paris include Notre Dame Cathedral (12th century); the Sainte-Chapelle (13th century); the Eiffel Tower (1889); and the Basilica of Sacré-Cœur on Montmartre (1914). 
+
+
 </p>
-<p>
-And that's all about Paris
-</p>
-<p> Other informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther <br><a href="#Top">Jumptothetop</a></p>
+
+<a href="#Top">Jumptothetop</a>
+
+
 
 
 <h3><a name="ChapterTokyo"><u>Tokyo</u></a></h3>
-<p>Tokyo is the capital city of <a href="http://en.wikipedia.org/wiki/Japan">Japan</a>. There are no information about Tokyo. All we know about Tokyo, is that there are so much we don't know about Tokyo. Also the people there are kinda weird.
-</p>
-<p>
-And that's all about Tokyo.
-</p>
-<p> Other informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther informationOther <br><a href="#Top">Jumptothetop</a></p>
+<p>Tokyo, officially Tokyo Metropolis is one of the 47 prefectures of <a href="https://en.wikipedia.org/wiki/Japan">Japan</a>, and is both the capital and largest city of Japan. The Greater Tokyo Area is the most populous metropolitan area in the world. It is the seat of the Emperor of Japan and the Japanese government. Tokyo is in the Kantō region on the southeastern side of the main island Honshu and includes the Izu Islands and Ogasawara Islands. Formerly known as Edo, it has been the de facto seat of government since 1603 when Shogun Tokugawa Ieyasu made the city his headquarters. It officially became the capital after Emperor Meiji moved his seat to the city from the old capital of Kyoto in 1868; at that time Edo was renamed Tokyo. Tokyo Metropolis was formed in 1943 from the merger of the former Tokyo Prefecture and the city of Tokyo.
 
-<h2 style="text-align:center" width="300">And now a very important question!</h2>
-<h3 style="text-align:center" width="150"> On scale 1 to 10 how much trash are you?</h3>
+Tokyo is often referred to and thought of as a city, but is officially known and governed as a "metropolitan prefecture", which differs from and combines elements of both a city and a prefecture, a characteristic unique to Tokyo. The Tokyo metropolitan government administers the 23 Special Wards of Tokyo (each governed as an individual city), which cover the area that was formerly the City of Tokyo before it merged and became the subsequent metropolitan prefecture in 1943. The metropolitan government also administers 39 municipalities in the western part of the prefecture and the two outlying island chains. The population of the special wards is over 9 million people, with the total population of the prefecture exceeding 13 million. The prefecture is part of the world's most populous metropolitan area with upwards of 37.8 million people and the world's largest urban agglomeration economy. The city hosts 51 of the Fortune Global 500 companies, the highest number of any city in the world. Tokyo ranked third in the International Financial Centres Development IndexEdit. </p>
+<br><a href="#Top">Jumptothetop</a>
 
-	<ul id="menu">
-		<li><a href="http://ecx.images-amazon.com/images/I/71XkA0WKZ0L._SL1500_.jpg">1-4</a></li>
-		<br>
-		<li><a href="https://upload.wikimedia.org/wikipedia/commons/f/f9/Poland._Trash_002.JPG">5-7</a></li>
-		<br>
-		<li><a href="http://noimpactman.typepad.com/photos/uncategorized/2008/04/07/trash.jpg">8-10</a></li>
-		<br>
-	</ul>
-	<a href="http://cdn.meme.am/instances/250x250/56779336.jpg">
-<p><img src="http://cdn.meme.am/instances/250x250/56779336.jpg" alt="Newspaper Cat Meme" width="3px" height="3px" style="image-align:left"></p>
-</a>
 </div>
 
-<div id="footer">
-Copyright © <iframe src="http://4.bp.blogspot.com/-v9sfR-Tmcww/UuppSBoOlTI/AAAAAAAAABo/3Vtrw2iQlbM/s1600/w3schools.com_02.png" width="500" height="250" style="border:none" name="Myframe">W3Schools.com</iframe>
-<a href="http://www.w3schools.com" target="Myframe">W3schools.com</a>
+
+<div id="section2">
+<h3 style="text-align:center"><a name="ChapterBerlin"><u>Berlin</u></a></h3>
+<p class="capitals">Berlin is the capital of <a href="https://en.wikipedia.org/wiki/Germany">Germany</a> and one of the 16 states of Germany. With a population of 3.5 million people, it is the second most populous city proper and the seventh most populous urban area in the European Union. Located in northeastern Germany on the banks of Rivers Spree and Havel, it is the centre of the Berlin-Brandenburg Metropolitan Region, which has about six million residents from over 180 nations. Due to its location in the European Plain, Berlin is influenced by a temperate seasonal climate. Around one-third of the city's area is composed of forests, parks, gardens, rivers and lakes.
+
+First documented in the 13th century and situated at the crossing of two important historic trade routes, Berlin became the capital of the Margraviate of Brandenburg (1417-1701), the Kingdom of Prussia (1701–1918), the German Empire (1871–1918), the Weimar Republic (1919–1933) and the Third Reich (1933–1945). Berlin in the 1920s was the third largest municipality in the world. After World War II, the city was divided; East Berlin became the capital of East Germany while West Berlin became a de facto West German exclave, surrounded by the Berlin Wall (1961–1989). Following German reunification in 1990, Berlin was once again designated as the capital of all Germany.
+
+Berlin is a world city of culture, politics, media, and science. Its economy is based on high-tech firms and the service sector, encompassing a diverse range of creative industries, research facilities, media corporations, and convention venues. Berlin serves as a continental hub for air and rail traffic and has a highly complex public transportation network. The metropolis is a popular tourist destination. Significant industries also include IT, pharmaceuticals, biomedical engineering, clean tech, biotechnology, construction, and electronics.
+
+Modern Berlin is home to renowned universities, orchestras, museums, entertainment venues, and is host to many sporting events. Its urban setting has made it a sought-after location for international film productions. The city is well known for its festivals, diverse architecture, nightlife, contemporary arts, and a high quality of living. Over the last decade Berlin has seen the emergence of a cosmopolitan entrepreneurial scene. Berlin is situated in northeastern Germany, in an area of low-lying marshy woodlands with a mainly flat topography, part of the vast Northern European Plain which stretches all the way from northern France to western Russia. The Berliner Urstromtal (an ice age glacial valley), between the low Barnim Plateau to the north and the Teltow Plateau to the south, was formed by meltwater flowing from ice sheets at the end of the last Weichselian glaciation. The Spree follows this valley now. In Spandau, Berlin's westernmost borough, the Spree empties into the river Havel, which flows from north to south through western Berlin.   </p>
+<br></br>
+<br></br>
+
+
+
+<h3 style="text-align:center"><a name="ChapterMadrid"><u>Madrid</u></a></h3>
+<p class="capitals">Madrid (pronounced: “mah-DRID” or /məˈdrɪd/) is the capital and largest city of <a href="https://en.wikipedia.org/wiki/Spain">Spain</a>. The capital used to be Toledo until 1561.
+
+Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. It is the largest city of Spain and, at 655 m (2,100 ft) above sea level, the highest capital of any European country. It is the third largest city in the European Union. It has two footballs teams, Real Madrid and Atlético Madrid.
+
+Madrid was ruled by the Romans from the 2nd century. After AD 711 it was occupied by the Moors. In 1083 Spain was ruled again by Spaniards. Catholic kings ruled the country. By the mid-16th century it had become the capital of a very large empire. Spain was ruled by monarchs from the House of Habsburg, then the House of Bourbon. After the Spanish Civil War it was ruled by a dictator until the mid-1970s when it became a democracy.
+
+As it is the capital city, Madrid is where the monarch lives and also where the government meets.
+
+Madrid is the financial centre of Spain. Many large businesses have their main offices there.
+
+Although it is a modern city, a lot of its history can be seen and felt as one walks along the streets and in the large squares of the city. There are beautiful parks, famous buildings, art galleries and concert halls. The summer months are very hot and the winter months are very cold. The region of Madrid has quite a dry climate. Most rain falls in autumn and spring. The winters are cold because it is so high up, and sometimes there is snow. The summers are hot. Often the temperature is above 30 °C (86 °F) in July and can often reach 40 °C (104 °F). At night it is much cooler. This is why people have a sleep (siesta) in the afternoon when it is too hot to do anything. Then they come out again in the evening and often eat dinner late at night. </p>
+
+<br></br>
+
+
+<h3 style="text-align:center"><a name="ChapterRome"><u>Rome</u></a></h3>
+<p class="capitals">Rome (Italian Roma) is the capital city of <a href="https://en.wikipedia.org/wiki/Italy">Italy</a> and the Italian region Latium. It is on the Tiber River and has 2.8 million people. An estimate by the OECD put the number of people of the city area of Rome at 3.47 million.[3] The enclave Vatican City is in the north-west. Rome is a major European political and cultural center, containing the HQ headquarters of FAO. It is home of the pope and was one of the most powerful cities of antiquity (the old world). It currently contains numerous museums, basilicas and palaces, such as the Colosseum.
+Rome stands on seven hills, with an area of 1285.31 kilometers². The city is crossed by two rivers: the Tiber, which runs from east to west, and l'Aniene, which runs from north-east to north – within the city, it flows into the Tiber. Rome was built on Sun Hill, later named Palatine. It grew and is now built on seven principal hills. Rome has an airport, which is named Leonardo Da Vinci International Airport (IATA: FCO). In Rome, there are also two underground lines (called "Underground A" and "Underground B") and many bus paths. Nothing is known for sure about the founding of Rome. The myth of Romulus and Remus is often told. They were supposedly raised by a she-wolf. Romulus killed Remus, and became the first king of Rome. There is no historical evidence of this, but the story is popular. After Romulus, who among other things created the Senate, there were, according to legend, six more kings: Numa Pompilius, Tullo Ostilio, Anco Marzio, Tarquinius Priscus, Servius Tullius, and Tarquinius Superbus.
+</div>
+
+
+<div id="sidesection">
+<h3 style="text-align:center"><u>General Information</u></h3>
+<table style="width:100%">
+  <caption></caption>
+  <tr>
+    <th>Countries</th>
+    <th>Capitals</th>
+    <th>Population</th>
+  </tr>
+  <tr>
+    <td>England</td>
+    <td>London</td>
+    <td>9,787,426</td>
+  </tr>
+  <tr>
+    <td>Germany</td>
+    <td>Berlin</td>
+    <td>3,562,166</td>
+  </tr>
+  <tr>
+    <td>France</td>
+    <td>Paris</td>
+    <td>2,240,621</td>
+  </tr>
+  <tr>
+    <td>Spain</td>
+    <td>Madrid</td>
+    <td>3,165,235</td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td>Tokyo</td>
+    <td>13,185,502</td>
+  </tr>
+   <tr>
+    <td>Italy</td>
+    <td>Rome</td>
+    <td>4,321,244</td>
+  </tr>
+</table>
+<br></br>
+<h2>Big Ben &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Buckingham Palace</h2>
+<img src="http://www.aboutbritain.com/images/attraction/big/big-ben-IMG_0180.jpg" alt="Big Ben" width="350px" height="250px" border="1px solid black"></img>
+<img src="http://news.images.itv.com/image/file/697847/img.jpg" alt="buckingham palace" width="350px" height="250px" border="1px solid black"></img>
+<h2>Brandenburg Gate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berlin Wall</h2>
+<img src="http://www.targeting-mitochondria.com/images/2016/vrac/Brandenburg-Gate-West-Berlin.jpg" alt="Gate of Brandenburg" width="350px" height="250px" border="1px solid black"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Berlinermauer.jpg" alt="Berlin wall" width="350px" height="250px" border="1px solid black"></img>
+<h2>Eiffel Tower &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Palace of Versailles</h2>
+<img src="http://cheapvacationholiday.com/wp-content/uploads/2015/06/Eiffel-Tower_date_11.jpg" alt="Eiffel Tower" width="350px" height="250px" border="1px solid black"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_073.jpg" alt="Palace of Versailles" width="350px" height="250px" border="1px solid black"></img>
+<h2>Royal Palace of Madrid  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Plaza Mayor</h2>
+<img src="http://www.visualitineraries.com/img/locations/16349.jpg" alt="Royal Palace of Madrid" width="350px" height="250px" border="1px solid black"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Plaza_Mayor_de_Madrid_02.jpg" alt="Plaza Mayor" width="350px" height="250px" border="1px solid black"></img>
+<h2>The Senso Ji temple  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tokyo skytree</h2>
+<img src="http://travel.helpyaa.com/wp-content/uploads/2014/06/118.jpg" alt="The Senso Ji Temple" width="350px" height="250px" border="1px solid black"></img>
+<img src="http://static.thousandwonders.net/Tokyo.Skytree.original.6658.jpg" alt="Tokyo Skytree" width="350px" height="250px" border="1px solid black"></img>
+<h2>Colosseum  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Vatican City</h2>
+<img src="http://onestep4ward.com/wp-content/uploads/2014/10/colosseum-rome-notes-and-001.jpg" alt="Colosseum" width="350px" height="250px" border="1px solid black"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/St_Peter's_Square,_Vatican_City_-_April_2007.jpg" alt="Vatican City" width="350px" height="250px" border="1px solid black"></img>
+</div>
+
+<br></br>
+<h3 color="red"><u>FINAL REVIEW</u></h2>
+<p><i>According to our site, you should visit the above destinations with the following order</i></p>
+<ol>
+	<li>Paris</li>
+	<li>Tokyo</li>
+	<li>Madrid</li>
+	<li>Berlin</li>
+	<li>London</li>
+    <li>Rome</li>
+</ol>
+
+<br></br>
+
+<h4>HTML Facts</h4>
+<p class="error">Τα styles μπορούν να μπουν ανεξάρτητα σε κάθε παράγραφο αλλά και σε όλο το "σώμα" ορίζοντας τα στο "head".</p>
+<p class="error">Το head αφορά κυρίως την περιοχή που κάνεις custom της επικεφαλίδες και τις παραγράφους χρησιμοποιώντας την εντολή style. Επίσης μπορείς να ορίσεις τίτλους στο tab της σελίδας.</p>
+<p class="error">Τα headings πάνε απο h1 εώς h6</p>
+<p><mark style="background-color:cyan">Υπάρχουν πολλοί τρόποι να χρωματίσεις τις λέξεις. Ένας από αυτούς είναι η εντολη mark, η οποία χρωματίζει με κίτρινο αν δεν το αλλάξεις.</mark></p>
+<p class="error">Οι εντολές subscript και superscript βοηθούν στην αναπαράσταση δυνάμεων και χημικών τύπων όπως <var>E</var>=<var>m</var><var>c</var><sup>2</sup> και H<sub>2</sub>O</p>
+
+<div id="closer">
+Copyright &copy <iframe src="http://www.aueb.gr/assets/img/logo.jpg" width="800" height="250" style="border:none" name="Myframe">W3Schools.com</iframe>
+<a href="http://www.aueb.gr" target="Myframe">click me</a>
 </div>
 
 </body>
